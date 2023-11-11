@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Making Forms">
+    <meta name="keywords" content="Forms">
+    <meta name="author" content="Gbolahan Folarin">
+    <meta name="copyright" content="Copyright © 2023, Nigeria">
+    <title>Forms</title>
+    <link rel="icon" type="png" href="./img/icons8-form-32.png">
+</head>
+<body>
+    <h1>Participatory Consent Form</h1>
+    <p>By filling this form, you consent to the reeglations as presented in the documention and promise to adhere strictly to the rules of the engagement</p>
+    <form action="">
+        <fieldset>
+        <legend>Youngster's Data</legend>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" required>
+        <br> <br>
+         <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" required>
+        <br> <br>
+        <p>Please select your Gender:      
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        </p>
+        <br>
+        <label for="parish">Select Parish:</label>
+        <select id="parish" name="parish">
+        <option value="1">St. John's Parish</option>
+        <option value="2">Maple Grove Parish</option>
+        <option value="3">Meadowview Parish</option>
+        <option value="4">Harmony Parish</option>
+        <option value="5">Pinecrest Parish</option>
+        </select>
+
+        <br> <br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="8" max="14" required>
+        <br> <br>
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber">
+        <br>
+        <p>How would you love to be engaged at the retreat <small><em>(You can select as many as possible)</em></small> </p>
+        <input type="checkbox" name="engagement" id="out_sports" value="Outdoor Sports">
+        <label for="out_sports">Outdoor Sports</label> <br>
+        <input type="checkbox" name="engagement" id="in_sports" value="Indoor Sports">
+        <label for="in_sports">Indoor Sports</label> <br>
+        <input type="checkbox" name="engagement" id="dancing" value="Dancing">
+        <label for="dancing">Dancing</label><br>
+        <input type="checkbox" name="engagement" id="draw_color" value="Drawing and Coloring">
+        <label for="draw_color">Drawing and Coloring</label>
+        </fieldset>
+        <br> <br>
+        <fieldset>
+            <legend>Guardian Consent</legend>
+            <label for="pFirstName">Parent's First Name</label>
+            <input type="text" name="pFirstName" id="pFirstName" required>
+            <br>
+            <br>
+            <label for="pLastName">Parent's Last Name</label>
+            <input type="text" name="pLastName" id="pLastName" required>
+            <br>
+            <br>
+            <label for="pPhoneNumber">Parent's Phone Number</label>
+            <input type="tel" name="pPhoneNumber" id="pPhoneNumber" required>
+            <br><br>
+                <p><label for="consentStatement">Consent Statement:</label></p>
+                <textarea name="consentStatement" id="consentStatement" cols="50" rows="10" placeholder="I consent to..."></textarea>
+            <br>
+            <br>
+            <label for="signature">Upload Signature</label>
+            <input type="file" name="signature" id="signature" required>
+        </fieldset>
+        <br><br>
+       <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
